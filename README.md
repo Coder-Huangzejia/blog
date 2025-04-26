@@ -1,7 +1,7 @@
 ## What 
-the blog portal 
+my blog portal 
 
 ## Tech stack
 - `next.js`
 - `typescript`
--  `tailwindcss`
+- `tailwindcss`

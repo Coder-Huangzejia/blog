@@ -1,9 +1,5 @@
-import Markdown from "@/component/markdown";
+import { Fragment } from "react";
 
-export default function Home() {
-  return (
-   <div>
-      <Markdown title="demo"/>
-   </div>
-  );
+export default function DefaultPage(){
+    return <Fragment></Fragment>
 }
