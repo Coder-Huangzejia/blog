@@ -11,6 +11,7 @@ type Post = {
     abstract: string;
     content: string;
 };
+// 借鉴了 https://www.jynxio.com/post/build-an-interactive-blog-with-mdx
 export async function fetchPost(url: string): Promise<Post> {
     const raw = await readFile(url);
     const { data: metadata, content } = matter(raw);
