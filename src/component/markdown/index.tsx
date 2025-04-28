@@ -3,7 +3,7 @@ import Code from "../code";
 interface Props{
   source:string
 }
-// 借鉴了 https://www.jynxio.com/post/build-an-interactive-blog-with-mdx
+// 借鉴了 https://github.com/jynxio/build-an-interactive-blog-with-mdx
  export default async function Markdown(props:Props) {
     const {source}=props
     const components = { pre: Code };

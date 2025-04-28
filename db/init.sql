@@ -11,20 +11,19 @@ CREATE TABLE IF NOT EXISTS post (
     id INT UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '文章ID',
     title VARCHAR(100) NOT NULL COMMENT '文章标题',
     content LONGTEXT NOT NULL COMMENT '文章内容',
-    pid INT UNSIGNED NULL COMMENT '文章分类'
+    pid INT UNSIGNED NULL COMMENT '文章分类',
     status ENUM('draft', 'published') NOT NULL DEFAULT 'draft' COMMENT '文章状态',
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
     updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
     is_deleted TINYINT(1) DEFAULT 0  COMMENT '软删除标记(0-未删除,1-已删除)',
     PRIMARY KEY (id),
-    UNIQUE KEY idx_slug (slug),
     KEY idx_status (status),
-    KEY idx_published_at (published_at)
+    KEY idx_created_at (created_at)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='文章表';
 
 -- 创建分类表
 CREATE TABLE IF NOT EXISTS category (
-    id INT AUTO_INCREMENT PRIMARY KEY,  -- 自增主键
+    id INT UNSIGNED AUTO_INCREMENT  PRIMARY KEY,  -- 自增主键
     title VARCHAR(100) NOT NULL UNIQUE,   -- 分类名称，不能为空且唯一
     description TEXT                     -- 分类描述（可选）
 );
