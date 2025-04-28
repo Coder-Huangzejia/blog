@@ -1,14 +1,13 @@
-import { fetchPost } from "@/lib/post";
- import { MDXRemote } from "next-mdx-remote/rsc";
+import { MDXRemote } from "next-mdx-remote/rsc";
 import Code from "../code";
+interface Props{
+  source:string
+}
 // 借鉴了 https://www.jynxio.com/post/build-an-interactive-blog-with-mdx
- export default async function Markdown(props:{pathArray:string[]}) {
-    const {pathArray}=props
-    const path='post/'+pathArray.map(decodeURIComponent).join('/')+'.md'
-    const post = await fetchPost(path);
+ export default async function Markdown(props:Props) {
+    const {source}=props
     const components = { pre: Code };
-
-    return <MDXRemote source={post.content} components={components} />;
+    return <MDXRemote source={source} components={components} />;
   }
   
 

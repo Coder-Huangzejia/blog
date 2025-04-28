@@ -1,8 +1,8 @@
-import { getServerSidePostTree } from "@/lib/post";
+import { fetchPostsFromDataBase } from "@/lib/post";
 import "./index.css";
 import Link from 'next/link';
 async function RootLayout({ children }: { children: React.ReactNode }) {
-    const posts = await getServerSidePostTree()
+    const groups = await fetchPostsFromDataBase()
     return (
         <html lang="en">
             <head>
@@ -12,13 +12,14 @@ async function RootLayout({ children }: { children: React.ReactNode }) {
             <body>
                 <div className="flex h-screen w-screen">
                     <div className="w-1/5 bg-base-200 p-4">
-                        <h2 className="text-2xl font-bold mb-4">菜单</h2>
-                        {posts.map((category, index) => (
+                        <h2 className="text-2xl font-bold mb-4">目录</h2>
+                        {groups.map((category, index) => (
                             <div key={index}>
+                                <div>{category.title}</div>
                                 <ul className="pl-4">
                                     {category.children.map((post, i) => (
                                         <li key={i} className="mb-2">
-                                            <Link href={post.path} className="btn btn-ghost btn-block">
+                                            <Link href={'/post/'+post.id} className="btn btn-ghost btn-block">
                                                 {post.title}
                                             </Link>
                                         </li>
