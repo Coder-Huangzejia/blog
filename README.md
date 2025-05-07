@@ -1,13 +1,12 @@
-<center>
+<h1 align="center">Welcome to my blog</h1>
+<p align="center">
     <strong>English</strong> |
     <a href="./README.zh-CN.md">简体中文</a>  
-</center>
-
-# Welcome to my blog
-
+    <p align="center">This is a modern and performant blog portal built with cutting-edge technologies</p>
+</p>
 
 
-This is a modern and performant blog portal built with cutting-edge technologies.
+
 
 ## ✨ Features
 
@@ -15,7 +14,8 @@ This is a modern and performant blog portal built with cutting-edge technologies
 *   **SEO Optimized:** Built with Next.js for excellent search engine visibility.
 *   **Type-Safe Development:** Leverages TypeScript for enhanced code maintainability and fewer runtime errors.
 *   **Database Driven:** Stores blog content in a MySQL database for efficient content management.
-*   **Easy Deployment:** Designed for effortless deployment to platforms like Vercel.
+*   **Easy Deployment:** One-click packaging and deployment with Docker
+
 
 ## 🛠️ Tech Stack
 
