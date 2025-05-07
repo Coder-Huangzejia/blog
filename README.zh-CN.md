@@ -57,9 +57,3 @@
 ## 🤝 参与贡献
 
 欢迎贡献! 请随时提交pull request或创建issue来提出改进建议或报告错误。
-
-<div align="right">
-  <small>
-    <a href="#readme-header">Back to English</a>
-  </small>
-</div>
