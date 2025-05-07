@@ -1,0 +1,6 @@
+.container {
+    inline-size: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px dashed var(--color-silver);
+}

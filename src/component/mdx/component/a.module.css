@@ -1,0 +1,10 @@
+.container {
+    text-decoration: 1.5px wavy underline cyan;
+    cursor: alias;
+
+    &:hover,
+    &:active,
+    &:focus-visible {
+        color: cyan;
+    }
+}

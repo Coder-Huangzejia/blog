@@ -1,25 +1,34 @@
 @import "tailwindcss";
-
+@import "./water.css";
+@import "./LXGWWenKaiMono-Regular/result.css";
 @tailwind utilities;
 
 :root {
-  --background-body:#000 !important
-;
+  --background-body:#000 !important;
+  --basic-font: 'LXGW WenKai Mono';
 }
-@font-face {
-  font-family: 'LXGW WenKai';
-  src: url('https://cdn.jsdelivr.net/npm/@lxgw/lxgw-wenkai-webfont@1.7.0/lxgw-wenkai-regular.woff2')
-      format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+
+
+
+
 body {
-  background: var(--background);
+  font-family: var(--basic-font);
+  background: #000 !important;
   color: var(--foreground);
-  font-family: "LXGW WenKai", sans-serif;
-  margin: 0 !important;
+  line-height: 1.6;
+  margin: 0
 }
+
+pre{
+  margin: 12px 0px;
+  border-radius: 12px;
+}
+
+
+html { 
+  font-size: clamp(12px,1.5vw, 18px);
+}
+
 @layer base {
   @media (prefers-color-scheme: dark) {
     :root {

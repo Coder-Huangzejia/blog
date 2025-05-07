@@ -1,0 +1,14 @@
+.os-scrollbar-handle {
+    --os-handle-border-radius: 999rem;
+    --os-handle-bg: var(--color-silver);
+    --os-handle-bg-hover: var(--color-white);
+    --os-handle-bg-active: var(--color-white);
+}
+
+.os-scrollbar-vertical .os-scrollbar-handle {
+    cursor: ns-resize;
+}
+
+.os-scrollbar-horizontal .os-scrollbar-handle {
+    cursor: ew-resize;
+}
