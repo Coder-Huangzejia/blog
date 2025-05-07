@@ -19,10 +19,11 @@
 
 ## 🛠️ Tech Stack
 
-*   **Framework:** [Next.js](https://nextjs.org/) - A React framework for building performant and SEO-friendly web applications.
-*   **Language:** [TypeScript](https://www.typescriptlang.org/) - A superset of JavaScript that adds static typing.
-*   **Styling:** [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapid UI development.
-*   **Database:** [MySQL](https://www.mysql.com/) - A popular open-source relational database management system.
+*   **Framework:** [Next.js](https://nextjs.org/) - A React framework for building performant and SEO-friendly web applications
+*   **Language:** [TypeScript](https://www.typescriptlang.org/) - A superset of JavaScript that adds static typing
+*   **Styling:** [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapid UI development
+*   **Database:** [MySQL](https://www.mysql.com/) - A popular open-source relational database management system
+*   **Containerization**: [Docker](https://www.docker.com/) - A platform for building, publishing, and running applications. 
 
 ## 🚀 Getting Started
 

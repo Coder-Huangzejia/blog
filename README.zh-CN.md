@@ -5,9 +5,6 @@
      <p align="center">这是一个采用前沿技术构建的现代化高性能博客门户</p>
 </p>
 
-
-
-
 ## ✨ 功能特性
 
 *   **简洁响应式设计:** 为所有设备提供无缝用户体验
@@ -22,6 +19,7 @@
 *   **语言:** [TypeScript](https://www.typescriptlang.org/) - 为JavaScript添加静态类型的超集
 *   **样式:** [Tailwind CSS](https://tailwindcss.com/) - 优先使用实用程序的CSS框架，可快速开发UI
 *   **数据库:** [MySQL](https://www.mysql.com/) - 流行的开源关系型数据库管理系统
+*   **容器化:** [Docker](https://www.docker.com/) - 用于构建、发布和运行应用程序的平台
 
 ## 🚀 快速开始
 
@@ -48,7 +46,7 @@
 
 ## 📦 部署
 
-本项目专为使用Vercel等平台轻松部署而设计。参考Next.js官方文档获取详细部署说明:
+参考Next.js官方文档获取详细部署说明:
 
 [Next.js with Docker示例](https://github.com/vercel/next.js/tree/canary/examples/with-docker)
 
