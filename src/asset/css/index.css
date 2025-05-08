@@ -1,11 +1,12 @@
 @import "tailwindcss";
 @import "./water.css";
-@import "./LXGWWenKaiMono-Regular/result.css";
+@import "./font.css";
 @tailwind utilities;
 
 :root {
   --background-body:#000 !important;
   --basic-font: 'LXGW WenKai Mono';
+  --basic-font-color:#fff
 }
 
 
@@ -14,7 +15,7 @@
 body {
   font-family: var(--basic-font);
   background: #000 !important;
-  color: var(--foreground);
+  color: var(--basic-font-color);
   line-height: 1.6;
   margin: 0
 }

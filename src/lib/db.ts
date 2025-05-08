@@ -28,7 +28,7 @@ async function getPool(): Promise<mysql.Pool> {
   return pool;
 }
 
-export async function query<T>(sql: string, params?: any[]): Promise<T[]> {
+export async function SQL<T>(sql: string, params?: any[]): Promise<T[]> {
   const connection = await (await getPool()).getConnection(); // 从连接池获取连接
   try {
     const [rows] = await connection.execute(sql, params);

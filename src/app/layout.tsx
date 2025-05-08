@@ -1,7 +1,8 @@
 import { fetchPostsFromDataBase } from "@/lib/post";
-import "./index.css";
 import Link from 'next/link';
-async function RootLayout({ children }: { children: React.ReactNode }) {
+import "@/asset/css/index.css";
+export const revalidate = 60;
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
     const groups = await fetchPostsFromDataBase()
     return (
         <html lang="en">
@@ -35,5 +36,3 @@ async function RootLayout({ children }: { children: React.ReactNode }) {
         </html>
     );
 }
-
-export default RootLayout;
