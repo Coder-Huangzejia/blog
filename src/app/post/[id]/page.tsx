@@ -8,7 +8,7 @@ export const revalidate = 60;
 export const dynamicParams = true
 
 
-type ParamsType = Record<"id", DBIdType>
+type ParamsType = Record<keyof Post, DBIdType>
 interface Props {
   params: Promise<ParamsType>
 }

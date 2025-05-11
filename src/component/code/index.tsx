@@ -6,7 +6,7 @@ interface Props extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLPreElem
 export default async function Code(props:Props){
     const code = props.children.props.children;
     const lang = props.children.props.className?.split("language-")[1] ?? "";
-    const html = await codeToHtml(code, { lang, theme: "github-dark-dimmed" });
+    const html = await codeToHtml(code, { lang, theme: "material-theme" });
 
     return <div dangerouslySetInnerHTML={{ __html: html }} />;
   }
